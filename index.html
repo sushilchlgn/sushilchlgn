@@ -274,6 +274,16 @@
     border-radius: 5px;
   }
 
+  .project-link {
+    font-family: var(--mono);
+    font-size: 13px;
+    color: var(--accent-teal);
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 14px;
+  }
+  .project-link:hover { text-decoration: underline; }
+
   /* ---------- SKILLS ---------- */
   .skill-groups {
     display: grid;
@@ -423,6 +433,23 @@
           <span class="chip">Go</span><span class="chip">OAuth2</span><span class="chip">FCM</span>
           <span class="chip">React Native</span><span class="chip">Webhooks / ETag</span>
         </div>
+      </article>
+
+      <article class="project-card">
+        <div class="card-head">
+          <h3>go-url-shortener</h3>
+          <span class="card-tag status-live">LIVE</span>
+        </div>
+        <p>
+          A URL shortener backend written in Go — takes a long URL, generates a short code, and
+          redirects on lookup. Deployed and running live, built to keep the core service small,
+          fast, and dependency-light.
+        </p>
+        <div class="stack">
+          <span class="chip">Go</span><span class="chip">net/http</span>
+          <span class="chip">Redirects</span>
+        </div>
+        <a class="project-link" href="https://urlshortener.sushilchaulagain.com.np/" target="_blank" rel="noopener">→ urlshortener.sushilchaulagain.com.np</a>
       </article>
 
       <article class="project-card">
